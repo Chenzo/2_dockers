@@ -7,7 +7,7 @@ services:
         ports:
             - 80:80
         environment:
-            - JSONSRC: anotherwebserver.php
+            - JSONSRC=anotherwebserver.php
         volumes:
             - ../www:/var/www/html
             - ./php/php.ini:/usr/local/etc/php/php.ini

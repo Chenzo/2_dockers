@@ -16,12 +16,12 @@ Get JSON from other docker -
 
 <?php
 
-/*
-$strJsonFileContents = file_get_contents("webserver.php/test.json");
+
+$strJsonFileContents = file_get_contents($_ENV['JSONSRC'] . "/test.json");
 $jayson = json_decode($strJsonFileContents, true);
 
 echo $jayson;
 var_dump($jayson);
 
-*/
+
 ?>
