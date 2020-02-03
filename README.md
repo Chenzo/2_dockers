@@ -1,6 +1,6 @@
 A Tale Of Two Dockers
 ====================  
-dealermanager.pro
+2 dockers talking.
 
 From the root run this command:
 `docker-compose -f docker/docker-compose_one.yml up --build`
