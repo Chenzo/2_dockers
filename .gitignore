@@ -1,0 +1,20 @@
+
+error_log
+error_log/
+node_modules
+node_modules/
+.sass-cache/
+*.log
+maps
+maps/
+.vscode/
+vince_bin/
+
+#docker specific
+/docker/database/*.sql
+!/docker/php/php.ini 
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?

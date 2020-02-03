@@ -1,0 +1,22 @@
+version: '3'
+services:
+    anotherwebserver.php:
+        build:
+            context: ../
+            dockerfile: docker/Dockerfile
+        ports:
+            - 8088:80
+        volumes:
+            - ../www_two:/var/www/html
+            - ./php/php.ini:/usr/local/etc/php/php.ini
+        networks:
+            - dockers-network
+        
+        
+    
+
+
+networks:
+    dockers-network:
+        driver: bridge
+

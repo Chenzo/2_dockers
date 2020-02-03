@@ -1,0 +1,22 @@
+version: '3'
+services:
+    webserver.php:
+        build:
+            context: ../
+            dockerfile: docker/Dockerfile
+        ports:
+            - 80:80
+        environment:
+            - JSONSRC: anotherwebserver.php
+        volumes:
+            - ../www:/var/www/html
+            - ./php/php.ini:/usr/local/etc/php/php.ini
+        networks:
+            - dockers-network
+        
+
+
+networks:
+    dockers-network:
+        driver: bridge
+
